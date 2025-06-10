@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variable</title>
+    <style>
+        :root{
+            --prcolor:rgb(148, 20, 20);
+            --seccolor:rgb(55, 49, 232);
+            /* here root is use as globle varable  */
+            /* and here we declare varable as globle varable and use in  */
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            display: flex;
+            padding: 34px;
+        }
+        ul li{
+            list-style: none;
+            padding: 34px;
+        }
+        .nav{
+           background-color: var(--prcolor);
+        }
+        ul li:first-child{
+            /* here we override our globle var */
+            /* here is varable is know as local varable */
+            --prcolor:rgb(233, 34, 150);
+            background-color: var(--prcolor);
+        }
+       
+        .box1{
+            background-color: var(--seccolor);
+        }
+    </style>
+
+</head>
+<body>
+  <div class="nav">
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contect</li>
+        </ul>
+    </nav>
+  </div>
+  <div class="box1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptate nobis mollitia totam deserunt est ducimus voluptatum qui, nam aperiam ut eaque dolorum fuga nostrum non soluta saepe quas sint ab ipsa! Sequi, reiciendis.</p>
+  </div>
+</body>
+</html>

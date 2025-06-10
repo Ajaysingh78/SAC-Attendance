@@ -1,0 +1,45 @@
+.textbox{
+    di
+    padding-left:300px ;
+    padding-bottom: 30px;
+    width: 1000px;
+    height: 140px;
+    border: 2px solid rgb(16, 13, 13);
+    background-color: black;
+   
+    
+}
+h4{
+   
+    
+    color: aliceblue;
+   
+    font-size: small;
+    
+  
+}
+.subheding1{
+    display: inline;
+    color: aliceblue;
+    padding-bottom: 45px;
+    padding-left: 5px;
+    
+
+}
+h6
+{
+    color: aliceblue;
+   
+    
+   
+  
+
+}
+.thumbnail
+{
+    width: 200px;
+    
+}
+img{
+    width: 100px;
+}

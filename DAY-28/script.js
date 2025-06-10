@@ -1,0 +1,20 @@
+console.log("thia lecture dedicated for strings");
+let a="Ajay";
+let friend="rohan"
+console.log(a[0]);
+console.log(a[1]);
+console.log(a[2]);
+console.log(a[3]);
+console.log(a[4]);
+console.log(a[5]);
+console.log(a[6]);
+console.log(a.length);
+console.log("my name is "+a+" "+"and my friend name is "+friend);
+console.log(`my name is ${a} and my friend name is${friend}`);
+console.log(friend.toUpperCase());
+console.log(friend.toLowerCase());
+console.log(friend.length);
+console.log(friend.slice(0,3));
+console.log(friend.slice(3,5));
+console.log(friend.concat(a));
+console.log(friend.replace("roh","ajay"));

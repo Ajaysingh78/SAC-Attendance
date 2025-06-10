@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAC Attendance Scanner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>SAC Attendance System</h1>
+    <p id="status">Please allow location access to continue...</p>
+
+    <div id="scanner-section" style="display: none;">
+      <video id="video" width="300" height="200" style="border: 1px solid gray;"></video>
+      <br />
+      <input type="file" accept="image/*" id="file-input" />
+      <br /><br />
+      <canvas id="canvas" hidden></canvas>
+      <p id="qr-result">Waiting for QR code...</p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/jsqr"></script>
+  <script src="script.js"></script>
+</body>
+</html>

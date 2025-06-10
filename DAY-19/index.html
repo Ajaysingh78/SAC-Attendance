@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>here we learn the concept of psuido element </title>
+    <style>
+        /* dynamic allocation  */
+       .boxes::after{
+        content: "hello my name is  lepto";
+       }
+       .boxes::before{
+        content: "no its worked";
+       }
+       ::selection
+       {
+        color: aqua;
+       }
+       .box1::first-letter
+       {
+        color: mediumpurple;
+        font-size: 56px;
+       }
+       input::placeholder{
+        color: brown;
+        font-size: 12px;
+
+       }
+    </style>
+
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box1">
+            <h2>hi my name is ajay singh gurjar
+
+            </h2>
+            <h4> so sorry to say</h4>
+        </div>
+        <div class="box1">
+            and this is another box
+        </div>
+        <input type="text" placeholder="type your name here  ">
+    </div>
+
+</body>
+
+</html>
